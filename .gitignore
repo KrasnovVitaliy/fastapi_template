@@ -1,0 +1,38 @@
+# IDE files
+.vscode/
+.idea/
+
+# Bytecode
+*.pyc
+__pycache__
+
+# builds
+mytracker_collector/generated/
+generated/
+
+# pytest
+.pytest_cache/
+.coverage
+.coverage.*
+
+# builders and stuff
+*.jar
+
+# vim
+*.swp
+
+.venv
+
+# clickhouse
+clickhouse_uploader/app/ch_uploader.db/
+
+# infrastructure
+infrastructure/kafka-data/*
+infrastructure/keydb-data/*
+infrastructure/postgres-data-test/
+infrastructure/zk-data/*
+infrastructure/zk-txn-logs/*
+infrastructure/clickhouse-data-test/*
+
+# logs
+*.log

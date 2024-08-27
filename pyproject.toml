@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "fastapi-template"
+version = "0.0.0"
+description = ""
+authors = ["Vitaliy Krasnov <krasnov.v.i@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = {extras = ["standard"], version = "^0.112.2"}
+pydantic-settings = "^2.4.0"
+sentry-sdk = "^2.13.0"
+tomli = "^2.0.1"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.6.2"
+invoke = "^2.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 120
+exclude = [".venv", "./tasks"]
+select = ["ALL"]
